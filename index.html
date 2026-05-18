@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>New Mag-index</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .w95 {
+            width: 96%;
+        }
+
+        .w90 {
+            width: 90%;
+        }
+
+        .w85 {
+            width: 85%;
+        }
+
+        .w80 {
+            width: 80%;
+        }
+
+        .w70 {
+            width: 70%;
+        }
+
+        .w65 {
+            width: 67.5%;
+        }
+
+        .w60 {
+            width: 60%;
+        }
+
+        .w50 {
+            width: 50%;
+        }
+
+        .w48 {
+            width: 48%;
+        }
+
+        .w45 {
+            width: 45%;
+        }
+
+        .w40 {
+            width: 40%;
+        }
+
+        .w35 {
+            width: 35%;
+        }
+
+        .w32 {
+            width: 33%;
+        }
+
+        .w30 {
+            width: 30%;
+        }
+
+        .w16 {
+            width: 16%;
+        }
+
+        .w15 {
+            width: 15%;
+        }
+
+        .w25 {
+            width: 23%;
+        }
+
+        .w20 {
+            width: 20%;
+        }
+
+        .w17 {
+            width: 16%;
+        }
+
+        .w12 {
+            width: 12%;
+        }
+
+        .w10 {
+            width: 10%;
+        }
+
+        .w5 {
+            width: 500px;
+        }
+
+        .w06 {
+            width: 630px;
+        }
+
+        .w26 {
+            width: 22%;
+        }
+
+        .lh {
+            line-height: 1.45px;
+        }
+
+        .wp {
+            word-spacing: 1px;
+        }
+
+
+        .h10 {
+            height: 10px;
+        }
+
+        .h30 {
+            height: 30px;
+        }
+
+        .h35 {
+            height: 35px;
+        }
+
+        .h40 {
+            height: 40px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+
+        .h60 {
+            height: 60px;
+        }
+
+        .h70 {
+            height: 70px;
+        }
+
+        .h80 {
+            height: 80px;
+        }
+
+        .h90 {
+            height: 90px;
+        }
+
+        .h100 {
+            height: 100px;
+        }
+
+        .h120 {
+            height: 110px;
+        }
+
+        .h140 {
+            height: 135px;
+        }
+
+        .h150 {
+            height: 150px;
+        }
+
+        .h200 {
+            height: 200px;
+        }
+
+        .h250 {
+            height: 250px;
+        }
+
+        .h300 {
+            height: 300px;
+        }
+
+        .h350 {
+            height: 350px;
+        }
+
+        .h400 {
+            height: 400px;
+        }
+
+        .h450 {
+            height: 480px;
+        }
+
+        .h500 {
+            height: 500px;
+        }
+
+        .h520 {
+            height: 563px;
+        }
+
+        .h550 {
+            height: 550px;
+        }
+
+        .h600 {
+            height: 600px;
+        }
+
+        .h650 {
+            height: 650px;
+        }
+
+        .h700 {
+            height: 980px;
+        }
+
+        .h240 {
+            height: 210px;
+        }
+
+        .height {
+            height: 100%;
+        }
+
+        .height50 {
+            height: 50%;
+        }
+
+        .mauto {
+            margin: auto;
+        }
+
+        .ml10 {
+            margin-left: 10px;
+        }
+
+        .ml5 {
+            margin-left: 5px;
+        }
+
+        .ml50 {
+            margin-left: 50px;
+        }
+
+        .ml60 {
+            margin-left: 60px;
+        }
+
+        .ml100 {
+            margin-left: 100px;
+        }
+
+        .ml120 {
+            margin-left: 120px;
+        }
+
+        .ml150 {
+            margin-left: 150px;
+        }
+
+        .ml170 {
+            margin-left: 190px;
+        }
+
+        .ml20 {
+            margin-left: 20px;
+        }
+
+        .ml200 {
+            margin-left: 200px;
+        }
+
+        .ml230 {
+            margin-left: 190px;
+        }
+
+        .ml250 {
+            margin-left: 280px;
+        }
+
+        .ml260 {
+            margin-left: 475px;
+        }
+
+        .ml30 {
+            margin-left: 30px;
+        }
+
+        .ml4 {
+            margin-left: 4px;
+        }
+
+        .ml300 {
+            margin-left: 300px;
+        }
+
+        .ml350 {
+            margin-left: 350px;
+        }
+
+        .ml355 {
+            margin-left: 370px;
+        }
+
+        .ml360 {
+            margin-left: 400px;
+        }
+
+        .ml40 {
+            margin-left: 70px;
+        }
+
+        .ml400 {
+            margin-left: 400px;
+        }
+
+        .ml420 {
+            margin-left: 400px;
+        }
+
+        .ml450 {
+            margin-left: 450px;
+        }
+
+        .ml570 {
+            margin-left: 550px;
+        }
+
+        .ml500 {
+            margin-left: 500px;
+        }
+
+        .ml550 {
+            margin-left: 780px;
+        }
+
+        .ml80 {
+            margin-left: 80px;
+        }
+
+        .ml240 {
+            margin-left: 235px;
+        }
+
+        .ml160 {
+            margin-left: 170px;
+        }
+
+        .ml320 {
+            margin-left: 330px;
+        }
+
+        .ml70 {
+            margin-left: 70px;
+        }
+
+        .ml90 {
+            margin-left: 90px;
+        }
+
+        .ml220 {
+            margin-left: 240px;
+        }
+
+        .mb15 {
+            margin-bottom: 20px;
+        }
+
+        .mt4 {
+            margin-top: 4px;
+        }
+
+        .mt10 {
+            margin-top: 10px;
+        }
+
+        .mt15 {
+            margin-top: 15px;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .mt25 {
+            margin-top: 25px;
+        }
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+        .mt40 {
+            margin-top: 40px;
+        }
+
+        .mt50 {
+            margin-top: 50px;
+        }
+
+        .mt60 {
+            margin-top: 60px;
+        }
+
+        .mt70 {
+            margin-top: 70px;
+        }
+
+        .mt80 {
+            margin-top: 85px;
+        }
+
+        .mt90 {
+            margin-top: 90px;
+        }
+
+        .mt100 {
+            margin-top: 100px;
+        }
+
+        .mt101 {
+            margin-top: 180px;
+        }
+
+        .mt110 {
+            margin-top: 150px;
+        }
+
+        .mt120 {
+            margin-top: 160px;
+        }
+
+        .mt150 {
+            margin-top: 200px;
+        }
+
+        .mt170 {
+            margin-top: 280px;
+        }
+
+        .mt160 {
+            margin-top: 195px;
+        }
+
+        .mt180 {
+            margin-top: 300px;
+        }
+
+        .mt300 {
+            margin-top: 300px;
+        }
+
+        .mt301 {
+            margin-top: 430px;
+        }
+
+        .mt200 {
+            margin-top: 200px;
+        }
+
+        .mt450 {
+            margin-top: 380px;
+        }
+
+        .mt5 {
+            margin-top: 5px;
+        }
+
+        .mt12 {
+            margin-top: 50px;
+        }
+
+        .mt350 {
+            margin-top: 350px;
+        }
+
+        .mt400 {
+            margin-top: 360px;
+        }
+
+        .mt75 {
+            margin-top: 55px;
+        }
+
+        .mt130 {
+            margin-top: 130px;
+        }
+
+        .mt140 {
+            margin-top: 145px;
+        }
+
+        .mt500 {
+            margin-top: 480px;
+        }
+
+        .mt146 {
+            margin-top: 180px;
+        }
+
+        .bgc1 {
+            background-color: #303e4b;
+        }
+
+        .bgc2 {
+            background-color: #f75656;
+        }
+
+        .bgc3 {
+            background-color: #3d9ddf;
+        }
+
+        .bgc4 {
+            background-color: #010307;
+        }
+
+        .bgc5 {
+            background-color: white;
+        }
+
+        .bgc6 {
+            background-color: #fbfbfb;
+        }
+
+        .bgc7 {
+            background-color: #0000007a;
+        }
+
+        .bgc8 {
+            background-color: #23527c00;
+        }
+
+        .bgc8:hover {
+            background-color: #23527c6e;
+            transition: 1s;
+        }
+
+        .bgc9 {
+            background-color: #337ab7;
+        }
+
+        .cursor1 {
+            cursor: pointer;
+        }
+
+        .cursor1:hover {
+            color: #f75656;
+            transition: 1s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        span:hover {
+            color: #f75656;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .position1 {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .p01 {
+            cursor: pointer;
+        }
+
+        .p01:hover {
+            color: #f75656;
+            transition: 1s;
+        }
+
+        .btnr {
+            color: #f75656;
+            height: 50px;
+            width: 10%;
+            margin-left: 590px;
+            border: none;
+            border-radius: 25px;
+            transition: 1s;
+            margin-left: 650px;
+        }
+
+        .btnr:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #f75656;
+        }
+
+        .btnb {
+            background-color: #3d9ddf;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+        .btng {
+            background-color: #69b64f;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+
+
+        .btnp {
+            background-color: #e36493;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+
+
+        .div1:hover {
+            background-color: #3379b772;
+            transition: 1s;
+            overflow: hidden;
+
+        }
+
+
+        .btnb:hover,
+        .btng:hover,
+        .btnp:hover {
+            background-color: #333333;
+            cursor: pointer;
+        }
+
+        .bg-attach {
+            background-attachment: fixed;
+        }
+
+        .fs1 {
+            font-size: 14px;
+        }
+
+        .fs2 {
+            font-size: 12px;
+        }
+
+        .fs3 {
+            font-size: 28px;
+        }
+
+        .fs4 {
+            font-size: 18px;
+        }
+
+        .fs5 {
+            font-size: 15px;
+        }
+
+        .fs6 {
+            font-size: 19.7px;
+        }
+
+        .fs7 {
+            font-size: 40px;
+        }
+
+        .fs8 {
+            font-size: 13px;
+        }
+
+        .fs9 {
+            font-size: 21px;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .cw {
+            color: white;
+        }
+
+        .cp {
+            color: #f75656;
+        }
+
+        .cb {
+            color: #303e4b;
+        }
+
+        .cb1 {
+            color: #23527c;
+        }
+
+        .cr {
+            color: #f75656;
+        }
+
+        .cg {
+            color: #c4c4c4;
+        }
+
+        .cg1 {
+            color: #cccccc;
+        }
+
+        .cg2 {
+            color: #e1e1e1;
+        }
+
+        .font2 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .font1 {
+            font-family: "open sans", sans-serif;
+        }
+
+        .b-radius {
+            border-radius: 25px;
+        }
+
+        .b-radius1 {
+            border-radius: 100px;
+        }
+
+        .bgsize {
+            background-size: cover;
+        }
+
+        .t-align {
+            text-align: center;
+        }
+
+        .padd-top {
+            padding-top: 5px;
+
+        }
+
+        .padd-bottom {
+            padding-bottom: 15px;
+        }
+
+        .bgimg1 {
+            background-image: url(img/slider1.jpg);
+        }
+
+        .bgimg2 {
+            background-image: url(img/slider2.jpg);
+        }
+
+        .bgimg3 {
+            background-image: url(img/slider3.jpg);
+        }
+
+        .bgimg4 {
+            background-image: url(img/trending3.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+
+        }
+
+        .bgimg4:hover {
+            background-size: 100% 100%;
+            cursor: pointer;
+
+
+        }
+
+        .bgimg5 {
+            background-image: url(img/mostviewed3.jpg);
+        }
+
+        .bgimg6 {
+            background-image: url(img/mostviewed1.jpg);
+        }
+
+        .bgimg7 {
+            background-image: url(img/trending1.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg7:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg8 {
+            background-image: url(img/trending2.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg8:hover {
+            background-size: 100% 100%;
+            color: #628fb7;
+        }
+
+        .bgimg9 {
+            background-image: url(img/pd2.jpg);
+        }
+
+        .bgimg10 {
+            background-image: url(img/mostviewed2.jpg);
+        }
+
+        .bgimg11 {
+            background-image: url(img/mostviewed4.jpg);
+        }
+
+        .bgimg12 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion2.jpg);
+            background-size: cover;
+        }
+
+        .bgimg13 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion1.jpg);
+            background-size: cover;
+        }
+
+        .bgimg14 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion4.jpg);
+        }
+
+        .bgimg15 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bgimg16 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion5.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bgimg17 {
+            background-image: url(img/gallery1.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg17:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg18 {
+            background-image: url(img/gallery2.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg18:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg19 {
+            background-image: url(img/gallery3.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg19:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg20 {
+            background-image: url(img/gallery4.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg20:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg21 {
+            background-image: url(img/gallery5.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg21:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg22 {
+            background-image: url(img/gallery6.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg22:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg23 {
+            background-image: url(img/footerbg.png);
+        }
+
+        .bgimg23color {
+            background-color: black;
+        }
+
+        .as {
+            height: 500px;
+            width: 60%;
+            background: linear-gradient(transparent, black),
+                url(img/slider1.jpg);
+        }
+
+        .as1 {
+            height: 250px;
+            width: 40%;
+            background: linear-gradient(transparent, black),
+                url(img/slider2.jpg);
+
+
+            background-size: cover;
+        }
+
+        .as2 {
+            height: 250px;
+            width: 40%;
+            background: linear-gradient(transparent, black),
+                url(img/slider3.jpg);
+            background-size: cover;
+        }
+
+        .as3 {
+
+            background-size: cover;
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed3.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .as4 {
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed1.jpg);
+
+            background-size: cover;
+            background-position: center;
+
+
+            background-repeat: no-repeat;
+        }
+
+        .as5 {
+
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed1.jpg);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .as6 {
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed2.jpg);
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+
+        .as7 {
+
+            background-size: cover;
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed3.jpg);
+
+            background-repeat: no-repeat;
+        }
+
+        .as8 {
+
+
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed4.jpg);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .as9 {
+            height: 300px;
+            width: 100%;
+            background: linear-gradient(transparent, black),
+                url(img/fashion2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .as10 {
+            height: 250px;
+            width: 35%;
+            background: linear-gradient(transparent, black),
+                url(img/fashion1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .as11 {
+            height: 350px;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.703)), url(img/pd2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .border11 {
+            border-top: 1px solid #8a8a8a;
+            padding-top: 20px;
+            border-bottom: 1px solid #8a8a8a;
+            padding-bottom: 20px;
+        }
+
+        .border13 {
+            border-bottom: 1px solid #8a8a8a;
+            width: 90%;
+            margin-left: 15px;
+            padding-bottom: 15px;
+        }
+
+        .border2 {
+            border-bottom: 1px solid#8a8a8a;
+            width: 95%;
+
+        }
+
+        .fw {
+            font-weight: 600;
+        }
+
+        .br {
+            background-repeat: no-repeat;
+        }
+
+        .border {
+            border: none;
+        }
+
+        .border01 {
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .border3 {
+            border: 1px solid #f1f1f1;
+        }
+
+        .border8 {
+
+            border-bottom: 1px solid #777777;
+            width: 18%;
+            margin-left: 550px;
+            padding-bottom: 10px;
+        }
+
+
+
+        .bg1 {
+            background: none;
+        }
+    </style>
+    <div class="w100 h35 cw bgc1 ">
+        <div class="w80 fl mt5">
+            <span class="fs2 ml100 font1 mt20"><i class="fa-regular fa-clock"></i>2025-09-17</span>
+
+            <span class="fs2 ml10 font1 mt20"><i class="fa-regular fa-cloud"></i>Bapunagar, Ahmedabad</span>
+        </div>
+        <div class="w20 fl mt5">
+            <i class="fa fa-facebook-f fs2 fl cursor1"></i>
+            <i class="fa fa-twitter fs2 fl ml10 cursor1"></i>
+            <i class="fa fa-instagram fs2 fl ml10 cursor1"></i>
+        </div>
+    </div>
+    <div class="bgc5 w100 h70 position1">
+        <div class="w40  h70 fl">
+            <img class="mt10 ml150" src="img/logo1.png" alt="New mag-logo" />
+        </div>
+
+        <div class="h70  w60  fl">
+            <a href="index.html"><span class="ml10 fl bg1 border fs1 cp font1 mt30 fw">HOME</span></a>
+            <a href="list-gridview.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">BLOG</span></a>
+            <a href="shop.html"><span class="ml30  fl bg1 border fs1 cb font1 fw mt30">SHOP LIST</span></a>
+            <a href="login.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">ACCOUNT</span></a>
+            <a href="cart.html"><span class="ml30 bg1 fl border fs1 cb font1 fw mt30">CART</span></a>
+            <a href="checkout.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">CHECKOUT</span></a>
+            <a href="about-us.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">ABOUT US</span></a>
+            <a href="contact-us.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">CONTACT US</span></a>
+
+            <i class="fa-solid fa-magnifying-glass ml50 cursor1 mt30"></i>
+        </div>
+    </div>
+
+    <div class="h500 w100">
+        <div class="h500 w50 fl as br bgsize padd-top">
+            <div class="h150 w100 t-align mt450">
+                <button class="btnb font1  fs1">#New</button>
+                <button class="btnp font1 ml10 fs1">#Health</button>
+                <p class="fs3 cw font2 t-align mt10">
+                    <strong>Discover your true health</strong>
+                </p>
+                <p class="ml320 cw fl font1 fs8 mt10">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12May
+                    <i class="fa-regular fa-comments ml10"></i>5 Comments
+                </p>
+            </div>
+        </div>
+        <div class="h250 w50 fl as1 br bgsize">
+            <div class="h150 w100 t-align mt100 ">
+
+                <button class="btnb font1  mt30 fs1">#Entertainment</button>
+                <button class="btng font1 ml10 fs1">#Health</button>
+                <p class="fs3 cw font2 mt20">
+                    <strong>Top 10 Dancers you should </strong>
+                </p>
+                <p class="ml160 t-align cw fl font1 fs8 mt5">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12May
+                    <i class="fa-regular fa-comments ml10"></i>5 Comments
+                </p>
+            </div>
+        </div>
+        <div class="h250 w40 fl as2 br bgsize">
+            <div class="h150 w100 mt100 t-align">
+                <button class="btng font1 mt50">#Religion</button>
+                <button class="btnp font1 ml10">#New</button>
+                <p class="fs3 mt10 t-align cw font2">What did Buddha teach?</p>
+                <p class="cw  t-align font1 fs8 ">
+                    <i class="ri-user-line"></i>Tom Richardson
+                    <i class="ri-time-line ml10"></i>12 June
+                    <i class="fa-regular fa-comments ml10"></i>5 Comments
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w80 h50 mauto mt50 bgc2">
+        <button class="h50 w20 fs9 font1 border bgc2 cw fl">Breaking News</button>
+        <div class="w80 border fl ">
+            <marquee class="border3 fl h50  bgc6">
+                <p class="fs5 font1 p01 mt15">
+                    “Speaks perfect English”: Trump's offensive praise of a Latino Border
+                    Patrol agent Watch J. Lo live her best life, Nicki Minaj go regal, and
+                    Ariana Grande go religious.Tesla fans have found a new person to blame
+                    for Elon Musk's troubles: his girlfriendThe Pentagon won't check if US
+                    bombs killed kids in Yemen. CNN did it for them.
+                </p>
+            </marquee>
+        </div>
+
+    </div>
+
+    <div class="h450 w80 mauto  mt20 ">
+        <h3 class="font2 fs3 cb">Top Trending</h3>
+        <hr class="mt20 cg2">
+        <div class="h400 w50 bgimg4 fl t-align mt20 ">
+            <div class="h400 w100 div1 padd-top">
+                <div class="h200 mt160  bgc7 w100 ">
+
+                    <h3 class="cw font1 fs9">Creativity comes within itself for everyone</h3>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btng ml5 font1 fs8">#Education</button>
+                    <button class="btnp ml5 font1 fs8">#Children</button>
+                    <p class="font1 fs5 cw mt30 ">Lorem Ipsum has been the industry's standard dummy text ever
+                        since<br />
+                        the 1500s, when an unknown printer took a galley.</p>
+                    <p class="cw t-align font1 fs8 mt25">
+                        <i class="ri-user-line"></i>Tom Richardson
+                        <i class="ri-time-line ml10"></i>12 June
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="h400 w26 as3 fl mt20 ml10">
+            <div class="w100 h200 t-align mt170">
+                <h3 class="font1 cw fs6 border13">Traffic, A Big Problem</h3>
+                <p class="cw t-align font1 mt10 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb mt10  font1 fs8">#New</button>
+                <button class="btnp ml5 font1 fs8">#Politics</button>
+
+
+            </div>
+
+        </div>
+        <div class="h400 w26 as4 mt20 ml20 fl">
+            <div class="w100 h200 t-align mt170">
+                <h3 class="font1 cw fs6 border13">Best Gadgets in town</h3>
+                <p class="cw t-align mt10 font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb mt10  font1 fs8">#New</button>
+                <button class="btnp ml5 font1 fs8">#Politics</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="h100 w60 mauto bgc2 mt20">
+        <img class="height w100 bgsize br" src="img/pd1.jpg" alt="">
+    </div>
+
+    <div class="h450 w80  mauto mt20 ">
+        <h3 class="font2 fs3 cb">Latest Posts</h3>
+        <hr class="mt20 cg2">
+        <div class="h400  fl mt20 w48">
+            <div class="height w100 bgimg7 fl t-align">
+                <div class="h400 w100 div1 padd-top">
+                    <div class="h200 mt160  bgc7 w100 ">
+
+                        <h3 class="cw font1 fs9">Creativity co es within itself fo everyone</h3>
+                        <button class="btnb  mt10 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Education</button>
+                        <button class="btnp ml5 font1 fs8">#Children</button>
+                        <p class="font1 fs5 cw mt30">Lorem Ipsum has been the industry's standard dummy text ever
+                            since<br />
+                            the 1500s, when an unknown printer took a galley.</p>
+                        <p class="cw t-align font1 fs8 mt25">
+                            <i class="ri-user-line"></i>Tom Richardson
+                            <i class="ri-time-line ml10"></i>12 June
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="h400 bgc2 ml30 fl mt20 w48">
+            <div class="height w100 bgimg8 fl bgc2 t-align">
+                <div class="h400 w100 div1 padd-top">
+                    <div class="h200 mt160  bgc7 w100 ">
+
+                        <h3 class="cw font1 fs9">2018's most fascinating governor's election, explained</h3>
+                        <button class="btnb  mt10 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Education</button>
+                        <button class="btnp ml5 font1 fs8">#Children</button>
+                        <p class="font1 fs5 cw mt30 ">Lorem Ipsum has been the industry's standard dummy text ever
+                            since<br />
+                            the 1500s, when an unknown printer took a galley.</p>
+                        <p class="cw t-align font1 fs8 mt25">
+                            <i class="ri-user-line"></i>Tom Richardson
+                            <i class="ri-time-line ml10"></i>12 June
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="h450 w80  mauto mt20 ">
+        <div class="height w48  fl ">
+            <div class="h150 w100  border01">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small4.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">Watch: the 3 best performances of the 2018 VMAs</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btng ml5 font1 fs8">#Health</button>
+
+
+                </div>
+            </div>
+
+            <div class="h150 w100 mt20 border01">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small5.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">Music bringing people together everywhere</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btnp ml5 font1 fs8">#Health</button>
+
+
+                </div>
+            </div>
+            <div class="h150 w100 mt20 ">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small6.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">"Speaks perfect English": Trump's offensive
+                        praise of a Latino Border Patrol agent</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btng ml5 font1 fs8">#Health</button>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="height w48  ml30 fl">
+            <div class="h150 w100  border01">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small1.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">7 reasons Hollywood doesn't make romantic comedies anymore</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnp  mt10 font1 fs8">#New</button>
+                    <button class="btng ml5 font1 fs8">#Sports</button>
+
+
+                </div>
+            </div>
+            <div class="h150 w100 mt20 border01">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small2.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">Must have gadgets in this century</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btnp ml5 font1 fs8">#Health</button>
+
+
+                </div>
+            </div>
+            <div class="h150 w100 mt20 ">
+                <div class="h150 w30 fl">
+                    <img class="bgsize h140 w100 br" src="img/small3.jpg" alt="">
+                </div>
+                <div class="h150 w65 ml170 ">
+                    <h4 class="font2 fs4 ml5 cb">Why conservatives love to hate Alexandria Ocasio-Cortez</h4>
+                    <p class="mt10 font1 fs8 ">
+                        <i class="ri-user-line"></i>John Doe
+                        <i class="ri-time-line ml10"></i>12 May
+                        <i class="fa-regular fa-comments ml10"></i>5 Comments
+                    </p>
+                    <button class="btnb  mt10 font1 fs8">#New</button>
+                    <button class="btng ml5 font1 fs8">#Health</button>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="as11 padd-top mt50">
+        <h2 class="t-align fs7 font2 cw mt60 ">
+            Build your dream magazine now
+        </h2>
+        <p class="cw t-align font1 fs6 mt20">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, and
+            publishing industries for previewing<br />layouts and visual mockups.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor<br />incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button class="btnr font1 mt30">Buy Now</button>
+    </div>
+    <div class="h450 w80 mauto  mt20 ">
+        <h2 class="fs3 cb font1">Most Viewed</h2>
+        <hr class="mt20 cg">
+        <div class="h400 w25 as4 fl  mt20">
+            <div class="h150 w100 t-align mt170">
+                <h3 class="cw fs9 font1">Technology and Music</h3>
+                <hr class="w85 mt10 cg2 ml20">
+                <p class="mt10 cw font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb  mt10 font1 fs8">#New</button>
+                <button class="btnp ml5 font1 fs8">#Health</button>
+
+
+            </div>
+        </div>
+        <div class="h400 w25 as6 fl ml30  mt20">
+            <div class="h150 w100 t-align mt170">
+                <h3 class="cw fs9 font1">Raising a child</h3>
+                <hr class="w85 mt10 cg2 ml20">
+                <p class="mt10 cw font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb  mt10 font1 fs8">#New</button>
+                <button class="btng ml5 font1 fs8">#Health</button>
+
+
+            </div>
+        </div>
+        <div class="h400 w25 as7 fl ml30  mt20">
+            <div class="h150 w100 t-align mt170">
+                <h3 class="cw fs9 font1">Travelling</h3>
+                <hr class="w85 mt10 cg2 ml20">
+                <p class="mt10 cw font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb  mt10 font1 fs8">#New</button>
+                <button class="btng ml5 font1 fs8">#Health</button>
+
+
+            </div>
+        </div>
+        <div class="h400 w25 as8 fl ml30  mt20">
+            <div class="h150 w100 t-align mt170">
+                <h3 class="cw fs9 font1">Chestor Bennington</h3>
+                <hr class="w85 mt10 cg2 ml20">
+                <p class="mt10 cw font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb  mt10 font1 fs8">#New</button>
+                <button class="btng ml5 font1 fs8">#Health</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="h600 w80 mauto  mt20 ">
+        <h2 class="fs3 cb font1">Fashion</h2>
+        <hr class="mt20 cg">
+        <div class="h500 w50 fl mt20 ">
+            <div class="h500 w50 fl ">
+                <div class="h300 w100 bgimg12  padd-top">
+                    <div class="h200 w100 t-align mt120">
+                        <h3 class="fs4 cw font1">Upcoming 50% sales off</h3>
+                        <hr class="w85 cg2 ml30 mt10">
+                        <p class="mt10 cw font1 fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                        </p>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btnp ml5 font1 fs8">#Fashion</button>
+
+
+                    </div>
+                </div>
+                <div class="h200 w100 bgimg13 mt4 padd-top">
+                    <div class="h200 w100 t-align mt70">
+                        <h3 class="fs4 cw font1">Best Outfit For Winter</h3>
+                        <hr class="w85 cg2 ml30 mt10">
+                        <p class="mt10 cw font1 fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                        </p>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btnp ml5 font1 fs8">#Fashion</button>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="h500 w48 fl ">
+                <div class="h200 w100 bgimg14 ml4 padd-top">
+                    <div class="h200 w100 t-align mt70">
+                        <h3 class="fs4 cw font1">The Killer Looks</h3>
+                        <hr class="w85 cg2 ml30 mt10">
+                        <p class="mt10 cw font1 fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                        </p>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btnp ml5 font1 fs8">#Fashion</button>
+
+
+                    </div>
+
+                </div>
+                <div class="h300 w100 bgimg15  mt4 ml4 padd-top">
+                    <div class="h200 w100 t-align mt120">
+                        <h3 class="fs4 cw font1">Look Best For Interview</h3>
+                        <hr class="w85 cg2 ml30 mt10">
+                        <p class="mt10 cw font1 fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                        </p>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btnp ml5 font1 fs8">#Fashion</button>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="h500 w50 fl  mt20 bgimg16  padd-top ">
+            <div class="h200 w100 t-align mt400">
+                <h3 class="fs4 cw font1">Lopez announces her new fashion collection</h3>
+                <hr class="w85 cg2 ml30 mt10">
+                <p class="mt10 cw font1 fs8 ">
+                    <i class="ri-user-line"></i>John Doe
+                    <i class="ri-time-line ml10"></i>12 May
+                </p>
+                <button class="btnb  mt20 font1 fs8">#New</button>
+                <button class="btnp ml5 font1 fs8">#Fashion</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="h600 w80 mauto  mt20 ">
+        <div class="height50 w100 ">
+            <div class="height bgimg17 bgsize  fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>Bob Dylan
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="height bgimg18 bgsize ml5 fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="height bgimg19 bgsize ml5 fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="height50 w100 ">
+            <div class="height bgimg20 bgsize mt5 fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="height bgimg21 bgsize ml5 mt5 fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="height bgimg22 bgsize ml5 mt5 fl w32 ">
+                <div class="height w100 bgc7">
+                    <div class="height w100 t-align padd-top">
+                        <h3 class="cw font1 mt100">Top guitar Riffs</h3>
+                        <button class="btnb  mt20 font1 fs8">#New</button>
+                        <button class="btng ml5 font1 fs8">#Music</button>
+                        <button class="btnp  mt20 font1 ml5 fs8">#Trending</button>
+                        <p class="mt10 font1 cw fs8 ">
+                            <i class="ri-user-line"></i>John Doe
+                            <i class="ri-time-line ml10"></i>12 May
+                            <i class="fa-regular fa-comments ml10"></i>5 Comments
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="h700 w100 bgsize br mt20 bgimg23 bgimg23color bg-attach padd-top">
+        <div class="h650 mt50 w80 mauto ">
+            <h3 class="cw font1  fs6 border8">Find Us on Instagram</h3>
+            <div class="h200 w100 mt20 ">
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer2.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer1.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer3.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer4.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer2.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer3.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="h400 w100  mt40">
+                <div class="height w32 fl ">
+                    <h3 class="cw fs6 font1 border13">NewMag</h3>
+                    <p class="mb15 fs5 cg ml20 font1 mt20">amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                    <div class="ml20 fs4">
+                        <i class="fa fa-facebook-f cg fl cursor1"></i>
+                        <i class="fa fa-twitter cg fl ml10 cursor1"></i>
+                        <i class="fa fa-instagram cg fl ml10 cursor1"></i>
+                    </div>
+                </div>
+
+                <div class="height w16 ml10 fl ">
+                    <h3 class="cw fs6 font1 border13">Categories</h3>
+                    <div class="cw ml50  font1 fs5 mt20">Entertainment</div>
+                    <div class="cw ml50 font1 mt10 fs5">Sports</div>
+                    <div class="cw ml50 mt10 font1 fs5">Politics</div>
+                    <div class="cw ml50 mt10 font1 fs5">National</div>
+                    <div class="cw ml50 mt10 font1 fs5">Blog</div>
+                </div>
+                <div class="height w16 ml5 fl ">
+                    <h3 class="cw fs6 font1 border13">Popular Tags</h3>
+                    <div class="cw ml50  font1 fs5 mt20">Entertainment</div>
+                    <div class="cw ml50 font1 mt10 fs5">Sports</div>
+                    <div class="cw ml50 mt10 font1 fs5">Politics</div>
+                    <div class="cw ml50 mt10 font1 fs5">National</div>
+                    <div class="cw ml50 mt10 font1 fs5">Blog</div>
+                </div>
+                <div class="height w32 fl  ml5">
+                    <h3 class="cw fs6 font1 border13">Newsletter</h3>
+                    <div class="cw ml50  font1 fs5 mt20">Dont Miss Anything</div>
+                    <div class="cw ml50 font1 mt10 fs5">Subscribe to our #newsletter</div>
+                    <input class="h35 w70 ml50 mt20 fl" type="text" name="" placeholder="Enter Email" id="">
+                    <button class="fl bgc2 border h35 mt20 w10">
+                        <i class="fa fa-paper-plane cw"></i>
+                    </button>
+                </div>
+
+            </div>
+            <span class="cw fl  border11 font1 ml450">
+                Copyright © 2023
+                <span><a class="cr" href="https://hitechskillindia.in/">Hi -
+                        Tech</a></span>
+                - All Rights reserved </span>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

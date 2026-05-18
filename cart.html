@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .w90 {
+            width: 90%;
+        }
+
+        .w85 {
+            width: 85%;
+        }
+
+        .w80 {
+            width: 80%;
+        }
+
+        .w70 {
+            width: 70%;
+        }
+
+        .w65 {
+            width: 67.5%;
+        }
+
+        .w60 {
+            width: 60%;
+        }
+
+        .w50 {
+            width: 50%;
+        }
+
+        .w48 {
+            width: 48%;
+        }
+
+        .w45 {
+            width: 45%;
+        }
+
+        .w40 {
+            width: 40%;
+        }
+
+        .w35 {
+            width: 35%;
+        }
+
+        .w30 {
+            width: 30%;
+        }
+
+        .w15 {
+            width: 15%;
+        }
+
+        .w25 {
+            width: 23%;
+        }
+
+        .w20 {
+            width: 20%;
+        }
+
+        .w12 {
+            width: 12%;
+        }
+
+        .w10 {
+            width: 10%;
+        }
+
+        .w5 {
+            width: 500px;
+        }
+
+        .w06 {
+            width: 630px;
+        }
+
+        .w26 {
+            width: 22%;
+        }
+
+        .lh {
+            line-height: 1.45px;
+        }
+
+        .wp {
+            word-spacing: 1px;
+        }
+
+
+        .h10 {
+            height: 10px;
+        }
+
+        .h30 {
+            height: 30px;
+        }
+
+        .h800 {
+            height: 900px;
+        }
+
+        .h35 {
+            height: 35px;
+        }
+
+        .h40 {
+            height: 40px;
+        }
+
+        .h45 {
+            height: 45px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+
+        .h60 {
+            height: 60px;
+        }
+
+        .h70 {
+            height: 70px;
+        }
+
+        .h80 {
+            height: 80px;
+        }
+
+        .h90 {
+            height: 90px;
+        }
+
+        .h100 {
+            height: 100px;
+        }
+
+        .h120 {
+            height: 110px;
+        }
+
+        .h140 {
+            height: 135px;
+        }
+
+        .h150 {
+            height: 150px;
+        }
+
+        .h200 {
+            height: 200px;
+        }
+
+        .h250 {
+            height: 250px;
+        }
+
+        .h300 {
+            height: 300px;
+        }
+
+        .h350 {
+            height: 350px;
+        }
+
+        .h400 {
+            height: 400px;
+        }
+
+        .h450 {
+            height: 480px;
+        }
+
+        .h500 {
+            height: 500px;
+        }
+
+        .h520 {
+            height: 563px;
+        }
+
+        .h550 {
+            height: 550px;
+        }
+
+        .h600 {
+            height: 600px;
+        }
+
+        .h650 {
+            height: 650px;
+        }
+
+        .h700 {
+            height: 710px;
+        }
+
+        .h240 {
+            height: 210px;
+        }
+
+        .height {
+            height: 100%;
+        }
+
+        .mauto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ml10 {
+            margin-left: 10px;
+        }
+        .ml15{
+            margin-left: 15px;
+        }
+        .ml5 {
+            margin-left: 5px;
+        }
+
+        .ml50 {
+            margin-left: 50px;
+        }
+
+        .ml60 {
+            margin-left: 60px;
+        }
+
+        .ml100 {
+            margin-left: 100px;
+        }
+
+        .ml120 {
+            margin-left: 120px;
+        }
+
+        .ml150 {
+            margin-left: 150px;
+        }
+
+        .ml170 {
+            margin-left: 190px;
+        }
+
+        .ml20 {
+            margin-left: 20px;
+        }
+
+        .ml200 {
+            margin-left: 200px;
+        }
+
+        .ml230 {
+            margin-left: 190px;
+        }
+
+        .ml250 {
+            margin-left: 280px;
+        }
+
+        .ml260 {
+            margin-left: 475px;
+        }
+
+        .ml30 {
+            margin-left: 30px;
+        }
+
+        .ml4 {
+            margin-left: 4px;
+        }
+
+        .ml300 {
+            margin-left: 300px;
+        }
+
+        .ml350 {
+            margin-left: 350px;
+        }
+
+        .ml355 {
+            margin-left: 370px;
+        }
+
+        .ml360 {
+            margin-left: 400px;
+        }
+
+        .ml40 {
+            margin-left: 70px;
+        }
+
+        .ml400 {
+            margin-left: 400px;
+        }
+
+        .ml420 {
+            margin-left: 400px;
+        }
+
+        .ml450 {
+            margin-left: 450px;
+        }
+
+        .ml570 {
+            margin-left: 550px;
+        }
+
+        .ml500 {
+            margin-left: 500px;
+        }
+
+        .ml550 {
+            margin-left: 650px;
+        }
+
+        .ml80 {
+            margin-left: 80px;
+        }
+
+        .ml240 {
+            margin-left: 235px;
+        }
+
+        .ml160 {
+            margin-left: 170px;
+        }
+
+        .ml320 {
+            margin-left: 330px;
+        }
+
+        .ml70 {
+            margin-left: 70px;
+        }
+
+        .ml90 {
+            margin-left: 90px;
+        }
+
+        .ml220 {
+            margin-left: 240px;
+        }
+
+        .mb15 {
+            margin-bottom: 15px;
+        }
+
+        .mt4 {
+            margin-top: 4px;
+        }
+
+        .mt10 {
+            margin-top: 10px;
+        }
+
+        .mt15 {
+            margin-top: 15px;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .mt25 {
+            margin-top: 25px;
+        }
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+        .mt40 {
+            margin-top: 40px;
+        }
+
+        .mt50 {
+            margin-top: 50px;
+        }
+
+        .mt60 {
+            margin-top: 60px;
+        }
+
+        .mt70 {
+            margin-top: 70px;
+        }
+
+        .mt80 {
+            margin-top: 75px;
+        }
+
+        .mt90 {
+            margin-top: 90px;
+        }
+
+        .mt100 {
+            margin-top: 100px;
+        }
+
+        .mt101 {
+            margin-top: 180px;
+        }
+
+        .mt110 {
+            margin-top: 150px;
+        }
+
+        .mt120 {
+            margin-top: 160px;
+        }
+
+        .mt150 {
+            margin-top: 200px;
+        }
+
+        .mt170 {
+            margin-top: 280px;
+        }
+
+        .mt160 {
+            margin-top: 195px;
+        }
+
+        .mt180 {
+            margin-top: 300px;
+        }
+
+        .mt300 {
+            margin-top: 300px;
+        }
+
+        .mt301 {
+            margin-top: 430px;
+        }
+
+        .mt200 {
+            margin-top: 200px;
+        }
+
+        .mt450 {
+            margin-top: 380px;
+        }
+
+        .mt5 {
+            margin-top: 5px;
+        }
+
+        .mt12 {
+            margin-top: 100px;
+        }
+
+        .mt350 {
+            margin-top: 350px;
+        }
+
+        .mt400 {
+            margin-top: 360px;
+        }
+
+        .mt75 {
+            margin-top: 55px;
+        }
+
+        .mt130 {
+            margin-top: 130px;
+        }
+
+        .mt140 {
+            margin-top: 145px;
+        }
+
+        .mt500 {
+            margin-top: 480px;
+        }
+
+        .mt146 {
+            margin-top: 180px;
+        }
+
+        .bgc1 {
+            background-color: #303e4b;
+        }
+
+        .bgc2 {
+            background-color: #f75656;
+        }
+
+        .bgc3 {
+            background-color: #3d9ddf;
+        }
+
+        .bgc4 {
+            background-color: #3b546a;
+        }
+
+        .bgc5 {
+            background-color: white;
+        }
+
+        .bgc6 {
+            background-color: #fbfbfb;
+        }
+
+        .bgc7 {
+            background-color: #0000007a;
+        }
+
+        .bgc8 {
+            background-color: #23527c00;
+        }
+
+        .bgc8:hover {
+            background-color: #23527c6e;
+            transition: 1s;
+        }
+
+        .bgc9 {
+            background-color: #337ab7;
+        }
+
+        .cursor1 {
+            cursor: pointer;
+        }
+
+        .cursor1:hover {
+            color: #f75656;
+            transition: 1s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        span:hover {
+            color: #f75656;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .position1 {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .p01 {
+            cursor: pointer;
+        }
+
+        .p01:hover {
+            color: #f75656;
+            transition: 1s;
+        }
+
+        .btnr {
+            color: #f75656;
+            height: 50px;
+            width: 10%;
+            margin-left: 590px;
+            border: none;
+            border-radius: 25px;
+            transition: 1s;
+            margin-left: 650px;
+        }
+
+        .btnr:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #f75656;
+        }
+
+        .btnb {
+            background-color: #3d9ddf;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+        .btng {
+            background-color: #69b64f;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+
+
+        .btnp {
+            background-color: #e36493;
+            color: white;
+            padding: 7px;
+            border: none;
+            transition: 1s;
+        }
+
+
+
+        .div1:hover {
+            background-color: #3379b772;
+            transition: 1s;
+            overflow: hidden;
+
+        }
+
+
+        .btnb:hover,
+        .btng:hover,
+        .btnp:hover {
+            background-color: #333333;
+            cursor: pointer;
+        }
+
+        .bg-attach {
+            background-attachment: fixed;
+        }
+
+        .fs1 {
+            font-size: 14px;
+        }
+
+        .fs2 {
+            font-size: 12px;
+        }
+
+        .fs3 {
+            font-size: 28px;
+        }
+
+        .fs4 {
+            font-size: 18px;
+        }
+
+        .fs5 {
+            font-size: 15px;
+        }
+
+        .fs6 {
+            font-size: 19.7px;
+        }
+
+        .fs7 {
+            font-size: 40px;
+        }
+
+        .fs8 {
+            font-size: 13px;
+        }
+
+        .fs9 {
+            font-size: 21px;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .cw {
+            color: white;
+        }
+
+        .cp {
+            color: #f75656;
+        }
+
+        .cb {
+            color: #303e4b;
+        }
+
+        .cb1 {
+            color: #23527c;
+        }
+
+        .cr {
+            color: #f75656;
+        }
+
+        .cg {
+            color: #c4c4c4;
+        }
+
+        .cg1 {
+            color: #cccccc;
+        }
+
+        .cg2 {
+            color: #e1e1e1;
+        }
+
+        .font2 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .font1 {
+            font-family: "open sans", sans-serif;
+        }
+
+        .b-radius {
+            border-radius: 25px;
+        }
+
+        .b-radius1 {
+            border-radius: 100px;
+        }
+
+        .bgsize {
+            background-size: cover;
+        }
+
+        .t-align {
+            text-align: center;
+        }
+
+        .padd-top {
+            padding-top: 5px;
+
+        }
+
+        .padd-bottom {
+            padding-bottom: 15px;
+        }
+
+        .padd-left {
+            padding-left: 10px;
+        }
+
+        .bgimg1 {
+            background-image: url(img/slider1.jpg);
+        }
+
+        .bgimg2 {
+            background-image: url(img/slider2.jpg);
+        }
+
+        .bgimg3 {
+            background-image: url(img/slider3.jpg);
+        }
+
+        .bgimg4 {
+            background-image: url(img/trending3.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+
+        }
+
+        .bgimg4:hover {
+            background-size: 100% 100%;
+            cursor: pointer;
+
+
+        }
+
+        .bgimg5 {
+            background-image: url(img/mostviewed3.jpg);
+        }
+
+        .bgimg6 {
+            background-image: url(img/mostviewed1.jpg);
+        }
+
+        .bgimg7 {
+            background-image: url(img/trending1.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg7:hover {
+            background-size: 100% 100%;
+            background-color: #23527c6e;
+        }
+
+        .bgimg8 {
+            background-image: url(img/trending2.jpg);
+            background-size: 110% 110%;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .bgimg8:hover {
+            background-size: 100% 100%;
+            color: #628fb7;
+        }
+
+        .bgimg9 {
+            background-image: url(img/pd2.jpg);
+        }
+
+        .bgimg10 {
+            background-image: url(img/mostviewed2.jpg);
+        }
+
+        .bgimg11 {
+            background-image: url(img/mostviewed4.jpg);
+        }
+
+        .bgimg12 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion2.jpg);
+            background-size: cover;
+        }
+
+        .bgimg13 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion1.jpg);
+            background-size: cover;
+        }
+
+        .bgimg14 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion4.jpg);
+        }
+
+        .bgimg15 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bgimg16 {
+            background: linear-gradient(transparent, black),
+                url(img/fashion5.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bgimg17 {
+            background-image: url(img/gallery1.jpg);
+        }
+
+        .bgimg18 {
+            background-image: url(img/gallery2.jpg);
+        }
+
+        .bgimg19 {
+            background-image: url(img/gallery3.jpg);
+        }
+
+        .bgimg20 {
+            background-image: url(img/gallery4.jpg);
+        }
+
+        .bgimg21 {
+            background-image: url(img/gallery5.jpg);
+        }
+
+        .bgimg22 {
+            background-image: url(img/gallery6.jpg);
+        }
+
+        .bgimg23 {
+            background-image: url(img/footerbg.png);
+        }
+
+        .bgimg23color {
+            background-color: black;
+        }
+
+        .as {
+            height: 500px;
+            width: 60%;
+            background: linear-gradient(transparent, black),
+                url(img/slider1.jpg);
+        }
+
+        .as1 {
+            height: 250px;
+            width: 40%;
+            background: linear-gradient(transparent, black),
+                url(img/slider2.jpg);
+
+
+            background-size: cover;
+        }
+
+        .as2 {
+            height: 250px;
+            width: 40%;
+            background: linear-gradient(transparent, black),
+                url(img/slider3.jpg);
+            background-size: cover;
+        }
+
+        .as3 {
+
+            background-size: cover;
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed3.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .as4 {
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed1.jpg);
+
+            background-size: cover;
+            background-position: center;
+
+
+            background-repeat: no-repeat;
+        }
+
+        .as5 {
+
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed1.jpg);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .as6 {
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed2.jpg);
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+
+        .as7 {
+
+            background-size: cover;
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed3.jpg);
+
+            background-repeat: no-repeat;
+        }
+
+        .as8 {
+
+
+            background: linear-gradient(transparent, black),
+                url(img/mostviewed4.jpg);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .as9 {
+            height: 300px;
+            width: 100%;
+            background: linear-gradient(transparent, black),
+                url(img/fashion2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .as10 {
+            height: 250px;
+            width: 35%;
+            background: linear-gradient(transparent, black),
+                url(img/fashion1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bs {
+            box-shadow: 0 0 5px #cccccc57;
+
+        }
+
+        .as11 {
+            height: 350px;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.703)), url(img/pd2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .border13 {
+            border-bottom: 1px solid #8a8a8a;
+            width: 90%;
+            margin-left: 15px;
+            padding-bottom: 15px;
+        }
+
+        .border2 {
+            border-bottom: 1px solid#8a8a8a;
+            margin-bottom: 50px;
+
+        }
+
+        .fw {
+            font-weight: 600;
+        }
+
+        .br {
+            background-repeat: no-repeat;
+        }
+
+        .border {
+            border: none;
+        }
+
+        .border01 {
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .border3 {
+            border: 1px solid #f1f1f1;
+        }
+
+        .bg1 {
+            background: none;
+        }
+
+        .Divmain {
+            width: 100%;
+            height: 700px;
+        }
+
+        .t-align {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .fw2 {
+            font-weight: 700;
+        }
+
+        .fw1 {
+            font-weight: 500;
+        }
+
+        .cg3 {
+            color: #666;
+        }
+
+        .cb2 {
+            color: #222;
+        }
+
+
+        .w-full {
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #e6e6e6;
+        }
+
+        th {
+            background-color: #fbfbfb;
+            color: #222;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+
+            color: #444;
+            font-size: 15px;
+        }
+
+        .remove-icon {
+            color: #333;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .qty-input {
+            width: 60px;
+            padding: 10px;
+            text-align: left;
+            padding-left: 15px;
+            border: 1px solid #e1e1e1;
+            color: #555;
+
+            font-family: "Roboto", sans-serif;
+            border-radius: 2px;
+        }
+
+        .coupon {
+            padding: 20px;
+        }
+
+
+
+        .coupon-label {
+            color: #666;
+            font-size: 15px;
+            margin-right: 5px;
+        }
+
+        .h-sync {
+            height: 35px;
+            line-height: normal;
+        }
+
+        .coupon-input {
+            border: 1px solid #e1e1e1;
+            padding: 0 15px;
+            font-size: 14px;
+            width: 180px;
+
+            font-family: "Roboto", sans-serif;
+            color: #555;
+            border-radius: 2px;
+        }
+
+        .coupon-input::placeholder {
+            color: #999;
+        }
+
+        .btn {
+            padding: 0 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            white-space: nowrap;
+            border-radius: 2px;
+
+        }
+
+        .btn1 {
+            padding: 0 25px;
+            font-size: 14px;
+            cursor: not-allowed;
+            transition: 0.3s;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+
+            border-radius: 2px;
+
+
+        }
+
+        .btn-apply {
+            background-color: #fff;
+            border: 1px solid #ff5b5b;
+            color: #ff5b5b;
+        }
+
+        .btn-apply:hover {
+            background-color: #ff5b5b;
+            color: #fff;
+        }
+
+        .btn-update {
+            background-color: #ff9090;
+            border: 1px solid #ff9090;
+            color: #fff;
+        }
+
+        .btn-update:hover {
+            background-color: #ff7676;
+            border-color: #ff7676;
+        }
+
+        h2.title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            font-family: "Roboto", sans-serif;
+
+        }
+        .totals-table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #e6e6e6;
+        }
+        .totals-table th {
+            text-align: left;
+            padding-left: 20px;
+            margin-top: 50px;
+        }
+
+        .totals-table td {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .btn-checkout {
+            background-color: #ff5b5b;
+            border: none;
+            color: #fff;
+            padding: 15px 35px;
+            font-size: 15px;
+            margin-top: 25px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-checkout:hover {
+            background-color: #e04f4f;
+        }
+
+        .pt {
+            margin-top: 30px;
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .cursor2 {
+            cursor: pointer;
+        }
+
+        .cursor2:hover {
+            color: #f75656;
+            transition: 1s;
+        }
+        .border11 {
+            border-top: 1px solid #555555;
+            padding-top: 20px;
+            border-bottom: 1px solid #555555;
+            padding-bottom: 20px;
+        }
+        .border6 {
+            border-bottom: 1px solid;
+            width: 100%;
+
+            padding-bottom: 20px;
+        }
+        .w32{
+            width: 32%;
+        }
+
+        .w17 {
+            width: 16%;
+        }
+        
+        .border8 {
+
+            border-bottom: 1px solid #777777;
+            width: 18%;
+            margin-left: 550px;
+            padding-bottom: 10px;
+        }
+    </style>
+    <div class="w100 h35 cw bgc1 ">
+        <div class="w80 fl mt5">
+            <span class="fs2 ml100 font1 mt20"><i class="fa-regular fa-clock"></i>2025-09-17</span>
+
+            <span class="fs2 ml10 font1 mt20"><i class="fa-regular fa-cloud"></i>Bapunagar, Ahmedabad</span>
+        </div>
+        <div class="w20 fl mt5">
+            <i class="fa fa-facebook-f fs2 fl cursor1"></i>
+            <i class="fa fa-twitter fs2 fl ml10 cursor1"></i>
+            <i class="fa fa-instagram fs2 fl ml10 cursor1"></i>
+        </div>
+    </div>
+    <div class="bgc5 w100 h70 position1">
+        <div class="w40  h70 fl">
+            <img class="mt10 ml150" src="img/logo1.png" alt="New mag-logo" />
+        </div>
+
+        <div class="h70  w60  fl">
+            <a href="index.html"><span class="ml10 fl bg1 border fs1 cb font1 mt30 fw">HOME</span></a>
+            <a href="list-gridview.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">BLOG</span></a>
+            <a href="shop.html"><span class="ml30  fl bg1 border fs1 cb font1 fw mt30">SHOP LIST</span></a>
+            <a href="login.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">ACCOUNT</span></a>
+            <a href="cart.html"><span class="ml30 bg1 fl border fs1 cp font1 fw mt30">CART</span></a>
+            <a href="checkout.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">CHECKOUT</span></a>
+            <a href="about-us.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">ABOUT US</span></a>
+            <a href="contact-us.html"><span class="ml30 fl bg1 border fs1 cb font1 fw mt30">CONTACT US</span></a>
+
+            <i class="fa-solid fa-magnifying-glass ml50 cursor1 mt30"></i>
+        </div>
+    </div>
+    <div class="h100 w100 bgc4 mt10 padd-top">
+        <div class="h45 w15 bgc5 ml550 mt80 padd-top bs">
+            <p class="fs5 ml30 mt10 font1 fl">Home</p>
+            <span class="fs1 ml20 fl mt10 h20 cg1"><strong>|</strong></span>
+            <p class="fs5 ml10 mt10 fl font1">shop</p>
+            <span class="fs1 ml20 fl mt10 h20 cg1"><strong>|</strong></span>
+            <p class="fs5 ml5 mt10 fl cr font1">Login</p>
+        </div>
+    </div>
+    <div class="h700 w80 mauto  mt50">
+        <div class="Divmain ">
+            <div class="height50 w100 ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="w10"></th>
+                            <th class="t-align font1">Product</th>
+                            <th class="t-align font1">Price</th>
+                            <th class="t-align font1">Quantity</th>
+                            <th class="t-align font1">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="t-align">
+                                <span class="remove-icon">✖</span>
+                            </td>
+
+                            <td class="t-align fw1 font2">Wall Color</td>
+                            <td class="t-align cg3 font1">$329.00</td>
+                            <td class="t-align">
+                                <input type="number" placeholder="No." min="0" max="50" class="w60 h40 padd-left" />
+                            </td>
+                            <td class="t-align cg3 font1">$329.00</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="6" class="coupon">
+                                <div>
+                                    <span class="coupon-label font1">Coupon:</span>
+                                    <input type="text" placeholder="Coupon code" class="coupon-input h-sync" />
+                                    <button class="btn btn-apply h-sync font2">Apply coupon</button>
+                                    <button class="btn1 btn-update h-sync font1">
+                                        Update cart
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="w-full height50 ">
+                <h2 class="title border6 mt50">Cart Totals</h2>
+
+
+                <table class="totals-table mt30">
+                    <thead>
+                        <tr>
+                            <th class="font1">Product</th>
+                            <th class="font1">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font1">
+                                Wall Color <strong class="ml5">× 1</strong>
+                            </td>
+                            <td class="cg3 font1">$329.00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw2 font1">Subtotal</td>
+                            <td class="cg3 font1">$329.00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw2 font1">Shipping</td>
+                            <td class="cg3 font1">
+                                Enter your address to view shipping options.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="fw2 font1">Total</th>
+                            <th class="fw2 cb2 font1">
+                                $329.00
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="pt font1">
+                    Your personal data will be used to process your order, support your
+                    experience throughout this website, and for other purposes described
+                    in our privacy policy.
+                </p>
+
+                <button class="btn-checkout font1">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="h800 w100 bgsize br  bgimg23 bgimg23color bg-attach padd-top">
+        <div class="h650 mt50 w80 mauto ">
+            <h3 class="cw font1  fs6 border8">Find Us on Instagram</h3>
+            <div class="h200 w100 mt20 ">
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer2.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer1.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer3.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer4.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer2.jpg" alt="">
+                </div>
+                <div class="height w17  fl">
+                    <img class="height bgsize br w100" src="img/footer3.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="h400 w100  mt40">
+                <div class="height w32 fl ">
+                    <h3 class="cw fs6 font1 border13">NewMag</h3>
+                    <p class="mb15 fs5 cg ml15 font1 mt20">amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                    <div class="ml15 fs4">
+                        <i class="fa fa-facebook-f cg fl cursor1"></i>
+                        <i class="fa fa-twitter cg fl ml10 cursor1"></i>
+                        <i class="fa fa-instagram cg fl ml10 cursor1"></i>
+                    </div>
+                </div>
+
+                <div class="height w16 ml10 fl ">
+                    <h3 class="cw fs6 font1 border13">Categories</h3>
+                    <div class="cw ml20  font1 fs5 mt20">Entertainment</div>
+                    <div class="cw ml20 font1 mt10 fs5">Sports</div>
+                    <div class="cw ml20 mt10 font1 fs5">Politics</div>
+                    <div class="cw ml20 mt10 font1 fs5">National</div>
+                    <div class="cw ml20 mt10 font1 fs5">Blog</div>
+                </div>
+                <div class="height w16 ml10 fl ">
+                    <h3 class="cw fs6 font1 border13">Popular Tags</h3>
+                    <div class="cw ml20  font1 fs5 mt20">Entertainment</div>
+                    <div class="cw ml20 font1 mt10 fs5">Sports</div>
+                    <div class="cw ml20 mt10 font1 fs5">Politics</div>
+                    <div class="cw ml20 mt10 font1 fs5">National</div>
+                    <div class="cw ml20 mt10 font1 fs5">Blog</div>
+                </div>
+                <div class="height w32 fl  ml10">
+                    <h3 class="cw fs6 font1 border13">Newsletter</h3>
+                    <div class="cw ml20  font1 fs5 mt20">Dont Miss Anything</div>
+                    <div class="cw ml20 font1 mt10 fs5">Subscribe to our #newsletter</div>
+                    <input class="h35 w70 ml20 mt20 fl" type="text" name="" placeholder="Enter Email" id="">
+                    <button class="fl bgc2 border h35 mt20 w10">
+                        <i class="fa fa-paper-plane cw"></i>
+                    </button>
+                </div>
+
+            </div>
+            <span class="cw fl  border11 font1 ml450">
+                Copyright © 2023
+                <span><a class="cr" href="https://hitechskillindia.in/">Hi -
+                        Tech</a></span>
+                - All Rights reserved </span>
+
+        </div>
+
+    </div>
+    </body>
+    </html>
